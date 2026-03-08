@@ -1,0 +1,25 @@
+stack = []
+# Push operation
+def push():
+    item = int(input("Enter element to push: "))
+    stack.append(item)
+    print("Element pushed")
+# Pop operation
+def pop():
+    if len(stack) == 0:
+        print("Stack is empty")
+    else:
+        item = stack.pop()
+        print("Popped element:", item)
+# Checking stack is empty
+def is_empty():
+    if len(stack) == 0:
+        print("Stack is empty")
+    else:
+        print("Stack is not empty")
+# to implement push and pop operations
+push()
+push()
+print("Stack:", stack)
+pop()
+is_empty()
