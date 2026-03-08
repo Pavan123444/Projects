@@ -1,0 +1,20 @@
+queue = []
+# Enqueue
+def enqueue():
+    item = int(input("Enter element: "))
+    queue.append(item)
+    print("Element inserted")
+# Dequeue
+def dequeue():
+    if len(queue) == 0:
+        print("Queue is empty")
+    else:
+        print("Removed element:", queue.pop(0))
+# Display
+def display():
+    print("Queue:", queue)
+enqueue()
+enqueue()
+display()
+dequeue()
+display()
